@@ -14,4 +14,4 @@ I'm going to keep the this short. Next goal is to successfully run Google Fonts 
 
 Viva la blogging!
 
-UPDATE: Nailed the Google Fonts thingy. Now we can read සිංහල in **style**.
+UPDATE: Nailed the Google Fonts thingy. Now we can read සිංහල in style.
