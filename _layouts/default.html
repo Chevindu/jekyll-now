@@ -5,8 +5,11 @@
 
     {% include meta.html %}
     
-
-{% if page %}
+{% if site.posts.first.googlewebfonts %}
+  <link href='http://fonts.googleapis.com/css?family={{ site.posts.first.googlewebfonts }}'>
+{% elsif page.googlewebfonts %}
+  <link href='http://fonts.googleapis.com/css?family={{ page.googlewebfonts }}'>
+{% elsif page %}
   <link href='http://fonts.googleapis.com/css?family=Abhaya+Libre'>
 {% endif %}
 
