@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Stoked to have you here!
 
-### More Information
+### About me
 
-A place to include any other types of information that you'd like to include about yourself.
+I am the tall Morty who escaped from citadel school.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+You can catch me: @Chevindu at almost everywhere, except Snapchat. Snapchat is dumb.
