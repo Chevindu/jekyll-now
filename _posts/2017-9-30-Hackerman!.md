@@ -13,3 +13,5 @@ No seriously, this is sort of a big deal for me. These fancy terms are still unc
 I'm going to keep the this short. Next goal is to successfully run Google Fonts on Jekyll and I will most probably write about it, if I get it right.
 
 Viva la blogging!
+
+UPDATE: Nailed the Google Fonts thingy. Now we can read සිංහල in style.
