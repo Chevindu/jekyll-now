@@ -36,4 +36,4 @@ WordPress → Jekyll සංක්‍රමණයට හේතු
 
 *[CMS]: Content Management Systems
 
-*[HTML]: Hyper Text Markup Language
+*[`HTML`]: Hyper Text Markup Language
