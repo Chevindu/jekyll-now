@@ -22,6 +22,7 @@
     margin-bottom: 10px;
     margin-right: 3px;
     border: 1px solid #D3D6D2;
+    border-radius: 5px;
     padding: 5px 10px 5px 10px;
 }
 .share-button:hover {
@@ -101,8 +102,7 @@
 	<h4>Spread:</h4>
 
 	<div class="share-buttons">
-	    <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+	    <a  id="fb"
 	        title="Share on Facebook" >
 	        <i class="fa fa-facebook-official share-button"> facebook</i>
 	    </a>
@@ -150,3 +150,13 @@
 	</div>
 
 </div>
+
+<script>
+document.getElementById('fb').onclick = function() {
+  FB.ui({
+    method: 'share',
+    mobile_iframe: true,
+    href: '{{ site.url }}{{ site.baseurl }}{{ page.url }}',
+  }, function(response){});
+}
+</script>
