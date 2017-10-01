@@ -142,6 +142,11 @@ img {
     clear: both;
 }
 
+#facebook_count, #linkedin_count {
+  background-color: $lightGray;
+  border-radius: 3px;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
