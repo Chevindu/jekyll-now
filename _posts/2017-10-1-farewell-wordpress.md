@@ -33,7 +33,3 @@ WordPress → Jekyll සංක්‍රමණයට හේතු
 මම `GitHub Pages` හරහා `Jekyll` ස්ථාපනය කරගත්ත ක්‍රමය සහ, `Google Fonts` සම්බන්ධ කරගත්ත ක්‍රමය වෙන දවසක ලියන්නම්. එතකන් මේ ඇති.
 
 ජය! :v:
-
-*[CMS]: Content Management Systems
-
-*[`HTML`]: Hyper Text Markup Language

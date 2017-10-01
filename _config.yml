@@ -49,8 +49,8 @@ url: http://chevindu.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-google_font:
-  - url: "https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala"
+#google_font:
+#  - url: "https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala"
 
 excerpt-seperator: <!--more-->
 
