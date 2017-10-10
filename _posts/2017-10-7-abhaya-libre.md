@@ -14,7 +14,7 @@ Abhaya Libre සක්‍රිය කරගන්න ඕන වෙබ් පි
 ```html
 <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
 ```
-ඒ වෙබ් පිටුවට අදාළ CSS ගොනුවේ පහළ කේතනය පිටපත් කරන්න. `.sinhalapara` කියන සිලෙක්ටර් එක තමන්ට අවශ්‍ය පරිදි වෙනස්කරගන්න.
+ඒ වෙබ් පිටුවට අදාළ CSS ගොනුවේ පහළ කේතනය පිටපත් කරන්න.
 
 ```css
 body {
