@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Abhaya Libre භාවිතා කරන අයුරු
-tags: abhaya libre sinhala unicode font usage
+tags: abhaya libre sinhala unicode font usage websites wordpress jekyll
 ---
 
 Abhaya Libre කියන්නේ අපි හැමෝම වගේ දැකලා තියෙන, පුෂ්පානන්ද ඒකනායක මහතාගෙ නිර්මාණයක් වන, **FM Abhaya** අකුරු මුහුණත පදනම් කරගත් නිර්මාණයක්. සිංහල යුනිකෝඩ් අක්ෂර වලට සහය දක්වන මේ අකුරු මුහුණත අපේ වෙබ්අඩවි වලට නොමිලේ, පහසුවෙන් සම්බන්ධ කරගන්න පුළුවන්. ඔයා දැන් කියවන මේ ලිපියේ භාවිතා වෙන්නෙත් Abhaya Libre අකුරු මුහුණත.
@@ -55,27 +55,11 @@ Jekyll සඳහා
 
 මගේ මේ බ්ලොග් එක GitHub Pages වල හොස්ට් කරපු, Jekyll හරහා ක්‍රියාකරන බ්ලොග් එකක්. මම මේකෙ Abhaya Libre පාවිච්චි කරපු විදිහ දැන් පැහැදිලි කරන්නම්.
 
-මුලින්ම `_config.yml` ගොනුවට මේ කේතය එකතුකරන්න.
 
-```yaml
-google_font:
-  - url: "https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala"
-```
-
-ඊට පස්සේ ඔයා කැමති ටෙක්ස්ට් එඩිටර් එකකින් පහත කේතය ලියලා `google-font.html` විදිහට save කරන්න.
+මුල්ම වැඩේ `default.html` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙ **`_layouts > default.html`** කියන තැන. `default.html` වල `<head>` ටැග් එක ඇතුළට මේ කේතය එකතුකරන්න.
 
 ```html
-{% if site.google_font %}
-{% for link in site.google_font %}
-  <link href='{{ link.url }}' rel='stylesheet' type='text/css'>
-{% endfor %}
-{% endif %}
-```
-
-තුන්වෙනි වැඩේ `default.html` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙ **`_layouts > default.html`** කියන තැන. `default.html` වල `<head>` ටැග් එක ඇතුළට මේ කේතය එකතුකරන්න.
-
-```liquid
-{% include google-font.html %}
+<link href='https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala' rel='stylesheet' type='text/css'>
 ```
 
 ඊළඟ වැඩේ අපේ අකුරු මුහුණතට variable එකක් වෙන්කරගන්න එක. ඒක කරන්න **`_sass > _variables.scss`** වල තියෙන `_variables.scss` ගොනුවට මේ පේළිය එකතුකරන්න.
@@ -100,4 +84,4 @@ Jekyll සඳහා මම අනුගමනය කළ පියවරවල්
 ජය! ✌️
 
 
-[^first]: Child themes හදාගන්න විදිහ [මෙතැනින්](https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/) ඉගෙනගන්න.
+[^first]: WordPress වල Child themes හදාගන්න විදිහ [මෙතැනින්](https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/) ඉගෙනගන්න.
