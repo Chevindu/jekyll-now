@@ -50,7 +50,54 @@ body {
 
 දැන් වැඩේ ඉවරයි. මීට වඩා ලේසියෙන් Google Fonts ස්ථාපනය කරගන්න පුළුවන් ප්ලගිනයක් පාවිච්චි කළා නම්. හැබැයි සමහර ප්ලගින් Abhaya Libre වලට සහය දක්වන්නෙ නැහැ, මොකද ඒක මෑතකදි එක්කරපු අකුරු මුහුණතක් නිසා.
 
+Jekyll සඳහා
+---
+
+මගේ මේ බ්ලොග් එක GitHub Pages වල හොස්ට් කරපු, Jekyll හරහා ක්‍රියාකරන බ්ලොග් එකක්. මම මේකෙ Abhaya Libre පාවිච්චි කරපු විදිහ දැන් පැහැදිලි කරන්නම්.
+
+මුලින්ම `_config.yml` ගොනුවට මේ කේතය එකතුකරන්න.
+
+```yaml
+google_font:
+  - url: "https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala"
+```
+
+ඊට පස්සේ ඔයා කැමති ටෙක්ස්ට් එඩිටර් එකකින් පහත කේතය ලියලා `google-font.html` විදිහට save කරන්න.
+
+```html
+{% if site.google_font %}
+{% for link in site.google_font %}
+  <link href='{{ link.url }}' rel='stylesheet' type='text/css'>
+{% endfor %}
+{% endif %}
+```
+
+තුන්වෙනි වැඩේ `default.html` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙ **`_layouts > default.html`** කියන තැන. `default.html` වල `<head>` ටැග් එක ඇතුළට මේ කේතය එකතුකරන්න.
+
+```liquid
+{% include google-font.html %}
+```
+
+ඊළඟ වැඩේ අපේ අකුරු මුහුණතට variable එකක් වෙන්කරගන්න එක. ඒක කරන්න **`_sass > _variables.scss`** වල තියෙන `_variables.scss` ගොනුවට මේ පේළිය එකතුකරන්න.
+
+```scss
+$abhaya: 'Abhaya Libre', serif;
+```
+
+දැන් අපිට කැමති විදිහට Abhaya Libre අකුරු මුහුණත පාවිච්චි කරන්න පුළුවන්. ඒ නිසා `style.scss` ගොනුවේ කැමති ක්ලාස් එකකට අපි අර්ථදක්වපු variable එක පාවිච්චි කරන්න.
+*උදා:*
+
+```scss
+body {
+	background: $white;
+	font: 18px/1.4 $abhaya;
+	color: $darkGray;
+}
+```
+
+Jekyll සඳහා මම අනුගමනය කළ පියවරවල් වැඩිය පැහැදිලි කරන්න උත්සාහ කළේ නැහැ, මොකද මමත් තාම අත-පත ගාන නිසා. හැබැයි කාටහරි දැනගන්න ඕන නම් ඒවා කළේ ඇයි කියලා, කොමන්ට් එකක් දාන්න. මම මේ ලිපිය විස්තරාත්මක කරන්නම්.
+
+ජය! ✌️
 
 
-
-[^first]: Child themes සාදාගන්නා අයුරු [මෙතැනින්](https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/) ඉගෙනගන්න.
+[^first]: Child themes හදාගන්න විදිහ [මෙතැනින්](https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/) ඉගෙනගන්න.
