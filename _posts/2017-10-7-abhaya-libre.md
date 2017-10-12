@@ -65,17 +65,17 @@ google_font:
 ඊට පස්සේ ඔයා කැමති ටෙක්ස්ට් එඩිටර් එකකින් පහත කේතය ලියලා `google-font.html` විදිහට save කරන්න.
 
 ```html
-&#123;% if site.google_font %&#125;
-&#123;% for link in site.google_font %&#125;
-  <link href='&#123;&#123; link.url &#125;&#125;' rel='stylesheet' type='text/css'>
-&#123;% endfor %&#125;
-&#123;% endif %&#125;
+{% if site.google_font %}
+{% for link in site.google_font %}
+  <link href='{{ link.url }}' rel='stylesheet' type='text/css'>
+{% endfor %}
+{% endif %}
 ```
 
 තුන්වෙනි වැඩේ `default.html` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙ **`_layouts > default.html`** කියන තැන. `default.html` වල `<head>` ටැග් එක ඇතුළට මේ කේතය එකතුකරන්න.
 
 ```liquid
-&#123;% include google-font.html %&#125;
+{% include google-font.html %}
 ```
 
 ඊළඟ වැඩේ අපේ අකුරු මුහුණතට variable එකක් වෙන්කරගන්න එක. ඒක කරන්න **`_sass > _variables.scss`** වල තියෙන `_variables.scss` ගොනුවට මේ පේළිය එකතුකරන්න.
