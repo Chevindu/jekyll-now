@@ -2,7 +2,7 @@
 layout: post
 title: Abhaya Libre භාවිතා කරන අයුරු
 tags: abhaya libre sinhala unicode font usage websites wordpress jekyll
-
+lang: si_LK
 ---
 
 Abhaya Libre කියන්නේ අපි හැමෝම වගේ දැකලා තියෙන, පුෂ්පානන්ද ඒකනායක මහතාගෙ නිර්මාණයක් වන, **FM Abhaya** අකුරු මුහුණත පදනම් කරගත් නිර්මාණයක්. සිංහල යුනිකෝඩ් අක්ෂර වලට සහය දක්වන මේ අකුරු මුහුණත අපේ වෙබ්අඩවි වලට නොමිලේ, පහසුවෙන් සම්බන්ධ කරගන්න පුළුවන්. ඔයා දැන් කියවන මේ ලිපියේ භාවිතා වෙන්නෙත් Abhaya Libre අකුරු මුහුණත.
