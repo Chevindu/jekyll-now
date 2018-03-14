@@ -4,8 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I am the tall Morty who escaped from citadel school.
-
-### Contact me
-
-I am @Chevindu almost anywhere.
+Computer Science soul trapped in a Mechanical body. Inspired by [one programming language pony](janithl.github.io).
