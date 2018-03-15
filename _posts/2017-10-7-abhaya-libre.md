@@ -17,13 +17,13 @@ Abhaya Libre කියන්නේ අපි හැමෝම වගේ දැක
 
 Abhaya Libre සක්‍රිය කරගන්න ඕන HTML පිටුවේ `<head>` ටැග් එක ඇතුළට, පහළ කේතනය පිටපත් කරන්න.
 
-{% highlight html %}
+{% highlight html linenos %}
 <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
 {% endhighlight %}
 
 ඒ වෙබ් පිටුවට අදාළ CSS ගොනුවේ පහළ කේතනය පිටපත් කරන්න.
 
-{% highlight %}
+{% highlight css linenos %}
 body {
 	font-family: 'Abhaya Libre', serif;
 }
@@ -38,7 +38,7 @@ WordPress සඳහා
 
 Child theme එකක තියෙන ප්‍රධාන ගොනු දෙක තමයි `style.css` සහ `functions.php`. පළවෙනි වැඩේ මේ `functions.php` ගොනුව වෙනස් කිරීම. ඒක තියෙන්නේ **`wp-content > themes > your-theme`** කියන තැන. cPanel එක හරහා හෝ වෙනත් ක්‍රමයකින් විවෘත කරලා, මේ කේතනය `functions.php` ගොනුවට එක්කරන්න.
 
-{% highlight %}
+{% highlight php linenos %}
 function custom_google_fonts() {
 	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Abhaya+Libre:300,700', false );
  }
@@ -48,7 +48,7 @@ add_action( 'wp_enqueue_scripts', 'custom_google_fonts' );
 
 දෙවෙනි වැඩේ `style.css` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙත් `functions.php` තිබුණ තැනමයි. පහත කේතනය `style.css` වල යටින්ම එක්කරන්න.
 
-{% highlight %}
+{% highlight css linenos %}
 body {
 	font: 20px 'Abhaya Libre', bodyfont, serif;
 }
@@ -66,20 +66,20 @@ Jekyll සඳහා
 
 මුල්ම වැඩේ `default.html` ගොනුව වෙනස්කිරීම. ඒක තියෙන්නෙ **`_layouts > default.html`** කියන තැන. `default.html` වල `<head>` ටැග් එක ඇතුළට මේ කේතය එකතුකරන්න.
 
-{% highlight %}
+{% highlight html linenos %}
 <link href='https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700&amp;subset=sinhala' rel='stylesheet' type='text/css'>
 {% endhighlight %}
 
 ඊළඟ වැඩේ අපේ අකුරු මුහුණතට variable එකක් වෙන්කරගන්න එක. ඒක කරන්න **`_sass > _variables.scss`** වල තියෙන `_variables.scss` ගොනුවට මේ පේළිය එකතුකරන්න.
 
-{% highlight %}
+{% highlight scss linenos %}
 $abhaya: 'Abhaya Libre', serif;
 {% endhighlight %}
 
 දැන් අපිට කැමති විදිහට Abhaya Libre අකුරු මුහුණත පාවිච්චි කරන්න පුළුවන්. ඒ නිසා `style.scss` ගොනුවේ කැමති තැනකට අපි අර්ථදක්වපු variable එක පාවිච්චි කරන්න.
 *උදා:*
 
-{% highlight %}
+{% highlight scss linenos %}
 body {
 	background: $white;
 	font: 18px/1.4 $abhaya;
