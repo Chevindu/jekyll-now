@@ -3,7 +3,7 @@ layout: post
 title: Psychedelic අත්දැකීම්
 tags: lsd psychedelic experience trip report sinhala sri lanka
 lang: si_LK
-visible: 0
+hidden: true
 ---
 සිංහරාජය අවට ලංකාගම ප්‍රදේශයේ දින තුනක විනෝද චාරිකාවකි. නවාතැන් පහසුකම් ලබාගත්තේ ඒ සඳහාම වෙන්කළ නිවසකිනි. මතු එන සිද්ධි සිදුවන්නේ එම නිවස තුළ, අවට තේ වතු, වනය සහ නුදුරින් ගලා ගිය දිය පහරක් අසල ය.
 
